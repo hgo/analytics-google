@@ -64,6 +64,7 @@
     <header-file src="src/ios/GAITracker.h" />
     
     <source-file src="src/ios/libGoogleAnalyticsServices.a" framework="true" />
+    <source-file src="src/ios/libAdIdAccess.a" framework="true" />
     
     <framework src="SystemConfiguration.framework" />
     <framework src="CoreData.framework" />
