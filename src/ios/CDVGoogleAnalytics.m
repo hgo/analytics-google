@@ -65,7 +65,7 @@ static id<GAITracker> _tracker = nil;
     if ([args count] > 0 && [[command.arguments objectAtIndex:0] length] > 0) {
         NSString *accountId = [command.arguments objectAtIndex:0];
         [GAI sharedInstance].dispatchInterval = 30;
-        [[GAI sharedInstance].logger setLogLevel:kGAILogLevelError];
+        [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
         _tracker = [[GAI sharedInstance] trackerWithTrackingId:accountId];
         _tracker.allowIDFACollection = YES;
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
